@@ -41,7 +41,7 @@ true ;
 ## Exercise 2: Obtain the logical formula from a sentence.
 
 ### 2.1. Description
-In this exercise, the DCG is extended to compute a logical form (LF) representing the semantic interpretation of a sentence. The grammar parses a sentence and returns a structure in which the verb is usually the predicate, and its arguments are the subject and the object. Thus, an input sentence such as `the rabbit eat a carrot` is mapped to the following output logical representation: `eat(rabbit, carrot)`. The queries test whether the grammar correctly derives this logical form and rejects ill-formed sentences.
+In this exercise, the DCG is extended to compute a logical form (LF) representing the semantic interpretation of a sentence. The grammar parses a sentence and returns a logical representation in which the verb is usually the predicate, and its arguments are the subject and the object. Thus, an input sentence such as `the rabbit eat a carrot` is mapped to the following LF output: `eat(rabbit, carrot)`. The queries test whether the grammar correctly derives this logical form and rejects ill-formed sentences.
 
 
 ### 2.2. Query results
