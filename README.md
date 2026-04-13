@@ -254,11 +254,11 @@ false.
 ### 4.4. Conclusion
 The implemented prolog script has returned the expected answers for the queries:
 
-sentence([an,apple,is,a,fruit], []). → true.
-sentence([an,apple,is,an,animal], []). → false.
-sentence([an,apple,has,apples], []). → true.
-sentence([an,apple,has,fingers], []). → false.
-sentence([a,human,has,fingers], []). → true.
+- sentence([an,apple,is,a,fruit], []). → true.
+- sentence([an,apple,is,an,animal], []). → false.
+- sentence([an,apple,has,apples], []). → true.
+- sentence([an,apple,has,fingers], []). → false.
+- sentence([a,human,has,fingers], []). → true.
 
 
 
