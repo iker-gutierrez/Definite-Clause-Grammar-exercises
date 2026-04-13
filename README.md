@@ -102,8 +102,8 @@ The following Prolog queries were used in order to test that the implemented pre
 - explain([a,doctor,reads,a,banana]).
 
 The “explain” predicate works as follows:
-If the sentence is well-formed: it returns all valid interactions of word senses in the sentence.
-If the sentence is not well-formed: it returns all invalid interactions of word senses in the sentence. Thus, it justifies the ill-formedness of the sentence by showing that all word sense interactions were checked and none is valid.
+- If the sentence is well-formed: it returns all valid interactions of word senses in the sentence.
+- If the sentence is not well-formed: it returns all invalid interactions of word senses in the sentence. Thus, it justifies the ill-formedness of the sentence by showing that all word sense interactions were checked and none is valid.
 
 ### 3.3. Query results
 These are the query results:
