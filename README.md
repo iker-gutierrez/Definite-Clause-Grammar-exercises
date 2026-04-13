@@ -5,7 +5,7 @@ Author: Iker Gutierrez Fandiño.
 ## Exercise 1: Integrate the WordNet lexicon in some of the example grammars.
 
 ### 1.1. Description
-In this exercise, a Definite Clause Grammar (DCG) is extended by integrating part-of-speech (POS) information from WordNet. The grammar accepts simple sentences of the form `Determiner + Noun + Verb + Determiner + Noun`. The queries test both sentence generation (e.g. query 102) and sentence validation (e.g. queries 103-104).
+In this exercise, a Definite Clause Grammar (DCG) is implemented by integrating part-of-speech (POS) information from WordNet. The grammar accepts simple sentences of the form `Determiner + Noun + Verb + Determiner + Noun`. The queries test both sentence generation (e.g. query 102) and sentence validation (e.g. queries 103-104).
 
 ### 1.2. Query results
 
@@ -43,7 +43,7 @@ true ;
 ## Exercise 2: Obtain the logical formula from a sentence.
 
 ### 2.1. Description
-In this exercise, the DCG is extended to compute a logical formula (LF) representing the semantic interpretation of a sentence. The grammar parses a sentence and returns an LF in which the verb is usually the logical predicate, and its arguments are the subject and the object. Thus, an input sentence such as `the rabbit eat a carrot` is mapped to the following LF output: `eat(rabbit, carrot)`. The queries test whether the grammar correctly derives this logical form and rejects ill-formed sentences.
+In this exercise, the DCG of exercise 1 is extended to compute a logical formula (LF) representing the semantic interpretation of a sentence. The grammar parses a sentence and returns an LF in which the verb is the logical predicate, and its arguments are the subject and the object. Thus, an input sentence such as `the rabbit eat a carrot` is mapped onto the following LF output: `eat(rabbit, carrot)`. In the queries below, I test whether the grammar correctly derives the logical formula and rejects ill-formed sentences.
 
 
 ### 2.2. Query results
