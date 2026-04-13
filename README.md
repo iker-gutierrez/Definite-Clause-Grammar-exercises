@@ -3,7 +3,7 @@
 ## Exercise 1: Integrate the WordNet lexicon in some of the example grammars.
 
 ### 1.1. Description
-In this exercise, a Definite Clause Grammar (DCG) is extended by integrating lexical information from WordNet. The grammar generates and validates simple sentences of the form Determiner + Noun + Verb + Determiner + Noun. WordNet provides semantic categories for nouns, allowing the grammar to produce several possible noun combinations based on the lexical hierarchy. The queries test both sentence generation (e.g. query 102) and sentence validation (e.g. queries 103-104).
+In this exercise, a Definite Clause Grammar (DCG) is extended by integrating lexical information from WordNet. The grammar accepts simple sentences of the form Determiner + Noun + Verb + Determiner + Noun. WordNet provides semantic categories for nouns, allowing the grammar to produce several possible noun combinations based on the lexical hierarchy. The queries test both sentence generation (e.g. query 102) and sentence validation (e.g. queries 103-104).
 
 ### 1.2. Query results
 
