@@ -89,17 +89,17 @@ In sum, a sentence is considered well-formed only if at least one combination of
 ### 3.2. Querying methodology
 The following Prolog queries were used in order to test that the implemented predicates work as expected:
 
-sentence([a,monkey,eats,a,banana], []).
-explain([a,monkey,eats,a,banana]).
+- sentence([a,monkey,eats,a,banana], []).
+- explain([a,monkey,eats,a,banana]).
 
-sentence([a,monkey,eats,a,book], []).
-explain([a,monkey,eats,a,book]).
+- sentence([a,monkey,eats,a,book], []).
+- explain([a,monkey,eats,a,book]).
 
-sentence([a,doctor,reads,a,book], []).
-explain([a,doctor,reads,a,book]).
+- sentence([a,doctor,reads,a,book], []).
+- explain([a,doctor,reads,a,book]).
 
-sentence([a,doctor,reads,a,banana], []).
-explain([a,doctor,reads,a,banana]).
+- sentence([a,doctor,reads,a,banana], []).
+- explain([a,doctor,reads,a,banana]).
 
 The “explain” predicate works as follows:
 If the sentence is well-formed: it returns all valid interactions of word senses in the sentence.
@@ -190,18 +190,18 @@ true.
 ### 3.4. Conclusion
 The implemented “sentence” predicate has returned the expected answers for the queries:
 
-sentence([a,monkey,eats,a,banana], []). → true.
-sentence([a,monkey,eats,a,book], []). → false.
-sentence([a,doctor,reads,a,book], []). → true.
-sentence([a,doctor,reads,a,banana], []). → false.
+- sentence([a,monkey,eats,a,banana], []). → true.
+- sentence([a,monkey,eats,a,book], []). → false.
+- sentence([a,doctor,reads,a,book], []). → true.
+- sentence([a,doctor,reads,a,banana], []). → false.
 
 Regarding the “explain” predicate, it returns the same number of valid interactions as the “sentence” predicate, suggesting that it is working properly:
 
-sentence([a,monkey,eats,a,banana], []). → 2.
-explain([a,monkey,eats,a,banana]). → 2.
+- sentence([a,monkey,eats,a,banana], []). → 2.
+- explain([a,monkey,eats,a,banana]). → 2.
 
-sentence([a,doctor,reads,a,book], []). → 4.
-explain([a,doctor,reads,a,book]). → 4.
+- sentence([a,doctor,reads,a,book], []). → 4.
+- explain([a,doctor,reads,a,book]). → 4.
 
 Regarding invalid interactions, the “explain” predicate seems to check all possible interactions, but in this case we cannot do the numerical checking of results, because the “sentence” predicate stops when it returns a “false” (it does not return a “false” for every invalid interaction).
 
@@ -216,11 +216,11 @@ In sum, validity depends on the verb’s paradigmatic type and whether the corre
 ### 4.2. Querying methodology
 The following Prolog queries were used in order to test that the implemented prolog script works as expected:
 
-sentence([an,apple,is,a,fruit], []).
-sentence([an,apple,is,an,animal], []).
-sentence([an,apple,has,apples], []).
-sentence([an,apple,has,fingers], []).
-sentence([a,human,has,fingers], []).
+- sentence([an,apple,is,a,fruit], []).
+- sentence([an,apple,is,an,animal], []).
+- sentence([an,apple,has,apples], []).
+- sentence([an,apple,has,fingers], []).
+- sentence([a,human,has,fingers], []).
 
 ### 4.3. Query results
 These are the query results:
