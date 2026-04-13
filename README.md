@@ -226,26 +226,26 @@ The following Prolog queries were used in order to test that the implemented pro
 These are the query results:
 
 102 ?- sentence([an,apple,is,a,fruit], []).
-true ;
+**true** ;
 true ;
 false.
 
 103 ?- sentence([an,apple,is,an,animal], []).
-false.
+**false**.
 
 
 104 ?- sentence([an,apple,has,apples], []).
-true ;
+**true** ;
 true ;
 true ;
 true ;
 false.
 
 105 ?- sentence([an,apple,has,fingers], []).
-false.
+**false**.
 
 106 ?- sentence([a,human,has,fingers], []).
-true ;
+**true** ;
 true ;
 true ;
 true ;
