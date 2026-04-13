@@ -2,10 +2,10 @@
 
 ## Exercise 1: Integrate the WordNet lexicon in some of the example grammars.
 
-### 1.1. Description:
+### 1.1. Description
+In this exercise, a Definite Clause Grammar (DCG) is extended by integrating lexical information from WordNet. The grammar generates and validates simple sentences of the form Determiner + Noun + Verb + Determiner + Noun. WordNet provides semantic categories for nouns, allowing the grammar to produce several possible noun combinations based on the lexical hierarchy. The queries test both sentence generation (e.g. query 102) and sentence validation (e.g. queries 103-104).
 
-
-### 1.2. Query results:
+### 1.2. Query results
 
 102 ?- sentence(X,[]).
 X = [a, entity, breathe, a, entity] ;
@@ -40,9 +40,11 @@ true ;
 
 ## Exercise 2: Obtain the logical formula from a sentence.
 
-### 2.1. Description:
+### 2.1. Description
+In this exercise, the DCG is extended to compute a logical form (LF) representing the semantic interpretation of a sentence. The grammar parses a sentence and returns a predicate structure in which the verb becomes the predicate and the subject and object become its arguments. Thus, a sentence such as `the rabbit eat a carrot"` is mapped to the logical representation `eat(rabbit, carrot)`. The queries test whether the grammar correctly derives this logical form and rejects ill-formed sentences.
 
-### 2.2. Query results:
+
+### 2.2. Query results
 102 ?- sentence(LF, [the,rabbit,eat,a,carrot], []).
 LF = eat(rabbit, carrot) ;
 LF = eat(rabbit, carrot) ;
@@ -76,7 +78,7 @@ Query 104 is false because this grammar is not sensitive to verbal inflection ("
 
 ## Exercise 3. Answer commonsense questions (syntagmatic relations). 
 
-### 3.1. Description.
+### 3.1. Description
 Syntagmatic relations refer to the horizontal, combinatory relations between words in a sentence. In this exercise, the sentences are based on selectional restrictions imposed by the verb, which determine the semantic compatibility between the subject and the object. Each verb encodes expectations about the type of entities that can participate in the event it describes. Hence:
 - With the verb "eats": the subject must be animate, the object must be edible.
 - With the verb "reads":the subject must be human, the object must be readable.
@@ -84,7 +86,7 @@ These restrictions are implemented through semantic categories (Cat) associated 
 
 In sum, a sentence is considered well-formed only if at least one combination of word senses satisfies these selectional preferences.
 
-### 3.2. Querying methodology:
+### 3.2. Querying methodology
 The following Prolog queries were used in order to test that the implemented predicates work as expected:
 
 sentence([a,monkey,eats,a,banana], []).
@@ -103,7 +105,7 @@ The “explain” predicate works as follows:
 If the sentence is well-formed: it returns all valid interactions of word senses in the sentence.
 If the sentence is not well-formed: it returns all invalid interactions of word senses in the sentence. Thus, it justifies the ill-formedness of the sentence by showing that all word sense interactions were checked and none is valid.
 
-### 3.3. Query results:
+### 3.3. Query results
 These are the query results:
 
 101 ?- consult(['/Users/ikerguti/Desktop/comp_sem_part2/exercise3.pl']).
