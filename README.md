@@ -1,3 +1,5 @@
+Author: Iker Gutierrez Fandiño.
+
 # Definite-Clause-Grammar exercises
 
 ## Exercise 1: Integrate the WordNet lexicon in some of the example grammars.
